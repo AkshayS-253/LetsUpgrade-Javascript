@@ -1,0 +1,59 @@
+<!----Display the current Date and Time----->
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript current day and time</title>
+  </head>
+  <body>
+    <p><h4>Sample Output:<br></h4></p> 
+      <script>
+        var today = new Date();            //Date Function
+        var day = today.getDay();          //For Day
+        var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+        document.write("Today is : " + daylist[day] + "."+"<br>");           // Day Output
+        console.log("Today is : " + daylist[day] + ".");              //Console Output
+
+
+        var hour = today.getHours();             //Hours 
+        var minute = today.getMinutes();         //Minutes
+        var second = today.getSeconds();         //seconds
+
+        var prepand = (hour >= 12)? " PM ":" AM "; //Format
+        hour = (hour >= 12)? hour - 12: hour;
+
+        if (hour===0 && prepand===' PM ') 
+        { 
+        if (minute===0 && second===0)
+        { 
+        hour=12;
+        prepand=' Noon';
+        } 
+        else
+        { 
+        hour=12;
+        prepand=' PM';
+        } 
+        } 
+        if (hour===0 && prepand===' AM ') 
+        { 
+        if (minute===0 && second===0)
+        { 
+        hour=12;
+        prepand=' Midnight';
+        } 
+        else
+        { 
+        hour=12;
+        prepand=' AM';
+        } 
+        } 
+
+
+      document.write("Current Time is : "+hour + prepand + " : " + minute + " : " + second);//Time Output
+      
+      console.log("Current Time is : "+hour + prepand + " : " + minute + " : " + second);//Console Output
+      </script>
+  </body>
+</html>
