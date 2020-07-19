@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - 3 Assignments</title>
+</head>
+<body>
+    <h1>Assignment Quetion- 3</h1>
+    <h2>Write a program to take marks as input from the user and grade him accordingly. 
+        Use Conditional statements. Also the same code using ternary </h2>
+    
+    <script>
+        let marks1 = Number(prompt("Enter the marks : ","50"));
+let result = (marks1 >= 80 && marks1 < 100) ? `Marks are ${marks1} and grade is A+`:
+             (marks1 >= 65 && marks1 < 80) ? `Marks are ${marks1} and grade is A`:
+             (marks1 >= 50 && marks1 < 65) ? `Marks are ${marks1} and grade is B`:
+             (marks1 >= 40 && marks1 < 50) ? `Marks are ${marks1} and grade is B+`:
+             (marks1 >= 35 && marks1 < 40) ? `Marks are ${marks1} and grade is C`:
+             (marks1 < 35) ? `Marks are ${marks1} and grade is C+`: "There was some mistke while entering the input, try again!";
+console.log(result); 
+    </script>
+</body>
+</html>
