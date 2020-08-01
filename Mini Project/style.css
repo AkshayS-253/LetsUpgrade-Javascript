@@ -1,0 +1,73 @@
+
+*{
+    color: black;
+}
+
+body{
+    background-color: #444;
+}
+h1{
+    color: white;
+}
+
+#time{
+    background-color: black;
+    color:white;
+    size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 1260px;
+}
+
+#inp, #clip{
+    background-color: #D7EE8C;
+    border: 3px ridge #c9c9bd;
+    border-radius: 2px;
+    padding: 10px;
+    align-items: center;
+}
+
+h1{
+    margin-top: 30px;
+}
+
+#container{
+
+    width: 700px;
+    background-color: #D44627;
+    text-align: center;
+    border: 4px ridge #c9c9bd;
+    padding: 40px;
+    margin-left: 260px;
+    margin-top: 60px;
+}
+
+input[value='Remove']{
+    background-color: #D7EE8C;
+    border: 1px ridge #c9c9bd;
+    align-items: left;
+    border-radius: 1px;
+    padding: 2px;
+}
+
+.item{
+    padding: 20px;
+    line-height: 24px;
+    border-radius: 4px;
+    margin-bottom: 11px;
+}
+
+#list{
+    padding: 40px;
+    margin-left: 40px;
+    width: 520px;
+    word-break: break-all;
+    text-align: left;
+}
+
+#txt{
+color: white;
+text-align:right;
+size: 15px;
+margin-top: 200px;
+}
